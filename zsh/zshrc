@@ -1,32 +1,15 @@
-source ~/.antigen.zsh
+# Add path variables
+#export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+#export PATH="$HOME/.bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+alias octave-cli="/usr/local/octave/3.8.0/bin/octave-3.8.0"
 
-# Load the oh-my-zsh's library.
+# From ut
+source ~/.antigen.zsh
 antigen use oh-my-zsh
 
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
-
-# Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-# Load the theme.
-if [[ "$TERM" == *"256"* ]]
-then
-    antigen theme agnoster
-else
-    antigen theme fishy
-fi
-
-# Tell antigen that you're done.
 antigen apply
-
-# Setting default user for agnoster theme
-DEFAULT_USER="me"
-
-
-# Setting up aliases
-source ~/bin/dotfiles/zsh/alias.zsh
-
-
-# Setting up misc things
-source ~/bin/dotfiles/zsh/misc.zsh
+antigen theme Soliah
