@@ -2,10 +2,10 @@
 #export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 #export PATH="$HOME/.bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
-alias octave-cli="/usr/local/octave/3.8.0/bin/octave-3.8.0"
 
 # From ut
-source ~/.antigen.zsh
+source /usr/local/share/antigen/antigen.zsh
+#source ~/.antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundle git
@@ -13,3 +13,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen apply
 antigen theme Soliah
+
+# Add anaconda to path
+export PATH=~/miniconda3/bin:$PATH
+
+# alias for a-vim-story
+alias avimstory="$HOME/coding_practice/a-vim-story/build/bin/a-vim-story"
