@@ -11,8 +11,8 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 
+antigen theme fishy
 antigen apply
-antigen theme Soliah
 
 # Add anaconda to path
 export PATH=~/miniconda3/bin:$PATH
