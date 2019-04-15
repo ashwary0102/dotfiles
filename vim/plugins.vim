@@ -1,57 +1,34 @@
-" -------------------------------------------------- 
+" --------------------------------------------------
 " Plugins for vimrc file
-" Author: UTkarsh Maheshwari (github.com/UtkarshMe)
-" Created: 17 Dec 2016
-" Modified: 01 Mar 2017
-" -------------------------------------------------- 
+" Author: Utkarsh Maheshwari (github.com/UtkarshMe)
+" --------------------------------------------------
 
-
-"
-" Using vundle to manage plugins
-"
-
-filetype off            " required for vundle
+filetype off                                    " Required for vundle
 
 " Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Let Vundle manage Vundle
-Plugin 'VundleVim/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'                   " The plugin manager
 
-" Text-mate like snippets for vim
-Plugin 'honza/vim-snippets'
-Plugin 'SirVer/ultisnips'
-" Plugin 'ervandew/supertab'
+" ----- Workflow -----
+Plugin 'airblade/vim-gitgutter'                 " Live git diff symbols
+Plugin 'SirVer/ultisnips'                       " Snippets engine
+Plugin 'honza/vim-snippets'                     " Snippets
+Plugin 'scrooloose/nerdtree'                    " Source tree
+Plugin 'jistr/vim-nerdtree-tabs'                " Seperate tree from tabs
+Plugin 'vim-syntastic/syntastic'                " Syntax checker
+Plugin 'scrooloose/nerdcommenter'               " Shortcut for commenting
+Plugin 'tpope/vim-fugitive'                     " Git blame
 
-" Multiple cursors like sublime-text
-" Plugin 'terryma/vim-multiple-cursors'
-
-" Shortcut for commenting
-Plugin 'scrooloose/nerdcommenter'
-
-" Syntax checking
-Plugin 'vim-syntastic/syntastic'
-
-" Use tab for all completion commands
-Plugin 'ervandew/supertab'
-
-" Tree for vim
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
-
-" quoting/parenthesizing made simple
-Plugin 'tpope/vim-surround'
-
-" JavaScript plugin
-Plugin 'pangloss/vim-javascript'
-
-" NodeJS plugin
-Plugin 'moll/vim-node'
-
-" Vala plugin
-Plugin 'tkztmk/vim-vala'
+" ----- Language support -----
+"Plugin 'pangloss/vim-javascript'                " JavaScript
+"Plugin 'moll/vim-node'                          " NodeJS
+"Plugin 'tkztmk/vim-vala'                        " Vala
 
 " All of Plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
+
+" Load plugin options
+source ~/.dotfiles/vim/plugin_options.vim
