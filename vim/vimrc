@@ -1,29 +1,26 @@
 " --------------------------------------------------
 " Vimrc file
-" Author: Utkarsh Maheshwari (github.com/UtkarshMe)
+" Author: Ashwary Sharma
 " --------------------------------------------------
 
 " Load vundle and plugin stuff
 if isdirectory($HOME . "/.vim/bundle/Vundle.vim")
     let g:has_vundle = v:true
-    source $HOME/.dotfiles/vim/plugins.vim
+    source $HOME/bin/dotfiles/vim/plugins.vim
 else
     let g:has_vundle = v:false
 endif
 
 " Load options
-source $HOME/.dotfiles/vim/options.vim
+source $HOME/bin/dotfiles/vim/options.vim
 
 " Load autocmds
-source $HOME/.dotfiles/vim/autocmds.vim
+source $HOME/bin/dotfiles/vim/autocmds.vim
 
 " Load mappings
-source $HOME/.dotfiles/vim/mappings.vim
-
-" Load colors and theme
-source $HOME/.dotfiles/vim/theme.vim
+source $HOME/bin/dotfiles/vim/mappings.vim
 
 " Load volatile changes which are not needed on every system
-if filereadable($HOME . "/.dotfiles/vim/volatile.vim")
-    source $HOME/.dotfiles/vim/volatile.vim
+if filereadable($HOME . "/bin/dotfiles/vim/volatile.vim")
+    source $HOME/bin/dotfiles/vim/volatile.vim
 endif
