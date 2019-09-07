@@ -20,6 +20,9 @@ source $HOME/bin/dotfiles/vim/autocmds.vim
 " Load mappings
 source $HOME/bin/dotfiles/vim/mappings.vim
 
+" Load theme
+"source $HOME/bin/dotfiles/vim/theme.vim
+
 " Load volatile changes which are not needed on every system
 if filereadable($HOME . "/bin/dotfiles/vim/volatile.vim")
     source $HOME/bin/dotfiles/vim/volatile.vim

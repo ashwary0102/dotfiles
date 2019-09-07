@@ -12,3 +12,21 @@ endif
 if (has("termguicolors"))
   set termguicolors
 endif
+
+
+"if g:has_vundle == v:true
+if v:false
+    set background=dark
+    let theme = 'gruvbox'
+    "colorscheme gruvbox
+
+    if theme == 'material'
+        let g:material_theme_style = &background
+    elseif theme == 'gruvbox'
+        let g:gruvbox_contrast_dark = 'hard'
+        set cursorline
+    endif
+
+    let g:airline_theme = theme
+
+endif

@@ -1,0 +1,38 @@
+"Plugin file for VIM, for smooth workflow
+tUsing Vundle as the plugin manager
+
+set nocompatible                                " Required for vundle
+filetype off                                    " Required for vundle
+
+" Set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'                   " The plugin manager
+
+" ----- Workflow -----
+Plugin 'airblade/vim-gitgutter'                 " Live git diff symbols
+Plugin 'SirVer/ultisnips'                       " Snippets engine
+Plugin 'honza/vim-snippets'                     " Snippets
+Plugin 'scrooloose/nerdtree'                    " Source tree
+Plugin 'jistr/vim-nerdtree-tabs'                " Seperate tree from tabs
+"Plugin 'vim-syntastic/syntastic'                " Syntax checker
+Plugin 'scrooloose/nerdcommenter'               " Shortcut for commenting
+Plugin 'tpope/vim-fugitive'                     " Git blame
+"Plugin 'vim-airline/vim-airline'
+Plugin 'morhetz/gruvbox'
+"Plugin 'valloric/youcompleteme'                 "Auto-complete
+"and also change the settings for syntastic
+"And also also see which plugin does autoindentation etc
+
+" ----- Language support -----
+"Plugin 'pangloss/vim-javascript'                " JavaScript
+"Plugin 'moll/vim-node'                          " NodeJS
+"Plugin 'tkztmk/vim-vala'                        " Vala
+
+" All of Plugins must be added before the following line
+call vundle#end()
+filetype plugin indent on
+
+" Load plugin options
+source ~/bin/dotfiles/vim/plugin_options.vim

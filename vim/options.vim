@@ -37,6 +37,7 @@ set smarttab                            " insert and delete spaces smartly
 set wrap                                " dont let text overflow
 set linebreak                           " better wrapping
 set showbreak=>\                        " show the wrapping
+set textwidth=80                        " automates newline after 80 char in line
 
 set pastetoggle=<F2>                    " enable easy clipboard pasting
 set updatetime=100                      " reduce updatetime to 100ms

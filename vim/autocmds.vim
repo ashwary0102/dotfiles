@@ -1,7 +1,4 @@
-" --------------------------------------------------
 " Autocmds file
-" Author: Utkarsh Maheshwari (github.com/UtkarshMe)
-" --------------------------------------------------
 
 " remember last position in file
 autocmd BufReadPost * if line("'\'") > 0 && line("'\'") <= line("$")
@@ -27,3 +24,15 @@ autocmd filetype javascript setlocal
             \ tabstop=2 shiftwidth=2 softtabstop=2      " smaller indent
 autocmd filetype json setlocal 
             \ tabstop=2 shiftwidth=2 softtabstop=2      " smaller indent
+
+autocmd filetype tex setlocal
+            \ filetype=tex
+
+"python specific commands
+xnoremap <F5> :w !python<cr>
+"works like a charm, this one
+"nnoremap <F5> :w | !python %<cr>
+"nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
+"imap <F5> <Esc>:w<CR>:!clear;python %<CR>
+"WTF NEITHER OF THEM ARE WORKING WITH NEW TABS OR BUFFERS, second one ain't
+"working with anything -_-
