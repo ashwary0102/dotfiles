@@ -26,3 +26,9 @@ set background=dark " for the dark version
 " set background=light " for the light version
 let g:one_allow_italics = 1 " I love italic for comments
 colorscheme one "to execute the code I guess
+
+"NCM 2 options
+"enable ncm2 for all buffers
+autocmd BufEnter * call ncm2#enable_for_buffer()
+" IMPORTANT: :help Ncm2PopupOpen for more information
+set completeopt=noinsert,menuone,noselect

@@ -11,14 +11,26 @@ call plug#begin('~/.vim/autoload')
 Plug 'junegunn/vim-easy-align' "lord knows why
 Plug 'scrooloose/nerdcommenter' "for easy commenting
 
-"Ultimate snippets engine and snippets
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 
+"LANGUAGE SERVER PROTOCOL I WANNA CHECK OUT
 "Autocomplete and syntax checking
-Plug 'valloric/youcompleteme'
+Plug 'ncm2/ncm2' "Completion manager
+Plug 'roxma/nvim-yarp' "Goodness knows what you do but are important
+"Plug 'valloric/youcompleteme'
 "Vim Ale is an asynchronous something lol, basically it's cool
-Plug 'https://github.com/dense-analysis/ale'
+Plug 'https://github.com/dense-analysis/ale' "linting engine
+
+"Non-language specific completion sources
+" NOTE: you need to install completion sources to get completions. Check
+" our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-path'
+Plug 'yuki-ycino/ncm2-dictionary'
+
+"Ultimate snippets engine and snippets
+Plug 'SirVer/ultisnips' "engine, doesn't come with any snippets
+Plug 'honza/vim-snippets' "basic snippets for many lang
+Plug 'ncm2/ncm2-ultisnips' "ultisnips and ncm2 compatibility
 
 "Git based
 Plug 'airblade/vim-gitgutter'
@@ -29,6 +41,12 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'junegunn/fzf.vim' "Finder plug
 
+"For python programming
+Plug 'ncm2/ncm2-jedi' "Ncm for python using Jedi
+
+"For R programming
+Plug 'jalvesaq/Nvim-R' "This gets an R Studio capabilities within VIM
+Plug 'gaalcaras/ncm-R' "Ncm for R
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                 Eye candy                                  "
