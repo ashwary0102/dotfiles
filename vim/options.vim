@@ -1,6 +1,5 @@
 " --------------------------------------------------
 " Options file
-" Author: Utkarsh Maheshwari (github.com/UtkarshMe)
 " --------------------------------------------------
 
 set nocompatible                        " improved mode
@@ -48,3 +47,8 @@ syntax enable                           " enable syntax highlighting
 set backupdir=~/.vim_backup,.,/tmp      " keep project directories uncluttered
 set directory=~/.vim_backup,.,/tmp      " by using a custom directory for all
 set undodir=~/.vim_backup,.,/tmp        " vim stuff
+
+"Splitting options
+set splitright "new vertical splits are moved to right window
+"autocmd FileType help,* wincmd L "Always open help files in a rightward
+"vertical split 
