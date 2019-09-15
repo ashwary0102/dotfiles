@@ -32,6 +32,9 @@ Plug 'SirVer/ultisnips' "engine, doesn't come with any snippets
 Plug 'honza/vim-snippets' "basic snippets for many lang
 Plug 'ncm2/ncm2-ultisnips' "ultisnips and ncm2 compatibility
 
+"Help and documentation
+Plug 'rizzatti/dash.vim' "Uses the Mac OS only dash.app
+
 "Git based
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive' "Git wrapper
