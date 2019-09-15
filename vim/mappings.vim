@@ -1,6 +1,5 @@
 " --------------------------------------------------
 " Mappings file
-" Author: Utkarsh Maheshwari (github.com/UtkarshMe)
 " --------------------------------------------------
 
 " because jk is easier to type
@@ -17,3 +16,6 @@ nnoremap <tab> >>
 nnoremap <s-tab> <<
 vnoremap <tab> >
 vnoremap <s-tab> <
+
+"for searching using dash.app with the plugin
+nnoremap <leader>ds :Dash <enter>
