@@ -32,3 +32,9 @@ colorscheme one "to execute the code I guess
 autocmd BufEnter * call ncm2#enable_for_buffer()
 " IMPORTANT: :help Ncm2PopupOpen for more information
 set completeopt=noinsert,menuone,noselect
+
+"Language Server Options
+"R language using languageclient
+let g:LanguageClient_serverCommands = {
+    \ 'r': ['R', '--slave', '-e', 'languageserver::run()'],
+    \ }

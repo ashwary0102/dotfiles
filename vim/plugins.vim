@@ -11,14 +11,21 @@ call plug#begin('~/.vim/autoload')
 Plug 'junegunn/vim-easy-align' "lord knows why
 Plug 'scrooloose/nerdcommenter' "for easy commenting
 
-
-"LANGUAGE SERVER PROTOCOL I WANNA CHECK OUT
 "Autocomplete and syntax checking
 Plug 'ncm2/ncm2' "Completion manager
 Plug 'roxma/nvim-yarp' "Goodness knows what you do but are important
 "Plug 'valloric/youcompleteme'
 "Vim Ale is an asynchronous something lol, basically it's cool
 Plug 'https://github.com/dense-analysis/ale' "linting engine
+
+"LANGUAGE SERVER PROTOCOL
+"Plug 'prabirshrestha/async.vim' "needed for vim and nvim integration for vim-lsp
+"Plug 'prabirshrestha/vim-lsp' "LSP client server for VIM?
+"Plug 'ncm2/ncm2-vim-lsp' "ncm2 and vim-lsp compatbiltiy
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ } "LanguageClient-neovim
 
 "Non-language specific completion sources
 " NOTE: you need to install completion sources to get completions. Check
