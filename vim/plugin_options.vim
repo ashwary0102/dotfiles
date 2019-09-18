@@ -34,7 +34,11 @@ autocmd BufEnter * call ncm2#enable_for_buffer()
 set completeopt=noinsert,menuone,noselect
 
 "Language Server Options
+let g:ale_disable_lsp = 1 "disable ALE lsp since using other(languageclient
+"or will have inbuilt in v.4
 "R language using languageclient
 let g:LanguageClient_serverCommands = {
     \ 'r': ['R', '--slave', '-e', 'languageserver::run()'],
     \ }
+"Python
+let g:LanguageClient_serverCommands = {'python': ['pyls']} "working flawlessly

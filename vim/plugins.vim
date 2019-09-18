@@ -15,7 +15,7 @@ Plug 'scrooloose/nerdcommenter' "for easy commenting
 Plug 'ncm2/ncm2' "Completion manager
 Plug 'roxma/nvim-yarp' "Goodness knows what you do but are important
 "Plug 'valloric/youcompleteme'
-"Vim Ale is an asynchronous something lol, basically it's cool
+"Vim Ale is an asynchronous linting engine lol, basically it's cool
 Plug 'https://github.com/dense-analysis/ale' "linting engine
 
 "LANGUAGE SERVER PROTOCOL
@@ -52,7 +52,8 @@ Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'junegunn/fzf.vim' "Finder plug
 
 "For python programming
-Plug 'ncm2/ncm2-jedi' "Ncm for python using Jedi
+"Plug 'ncm2/ncm2-jedi' "Ncm for python using Jedi; language server
+"already feeding
 
 "For R programming
 Plug 'jalvesaq/Nvim-R' "This gets an R Studio capabilities within VIM
