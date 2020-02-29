@@ -60,7 +60,6 @@ Plug 'jalvesaq/Nvim-R' "This gets an R Studio capabilities within VIM
 Plug 'gaalcaras/ncm-R' "Ncm for R
 
 "LaTeX tools
-"linting, autocomplete, snippets
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                 Eye candy                                  "
